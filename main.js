@@ -151,10 +151,7 @@ function validation () {
     
 }
 
-$('#contact').on('click', function(){
-    contactForm()
-    closeSideBar ()
-})
+
 
 
 // ~--------------------------Side Bar-----------------------------
@@ -203,7 +200,6 @@ function displayDataMeals(list){
 
 }
 async function getRandomMeal(){
-    loadingScreen()
     let xhr = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`)
     let res = await xhr.json();
     console.log(res.meals);
@@ -438,13 +434,25 @@ $('#search').on('click', function(){
     createInputsElement()
     closeSideBar ()
 })
-function loadingScreen(){
-    $(function(){
-        $('.loaderScreen').fadeOut(500)
-        $('body').css('overflow','auto')
-    })
+$('#contact').on('click', function(){
+    contactForm()
+    closeSideBar ()
+})
+// function loadingScreen(){
+//     $(function(){
+//         $('.loaderScreen').fadeOut(500)
+//         $('body').css('overflow','auto')
+//     })
 
-}
+// }
+
+$(document).ready(() => {
+    searchByName("").then(() => {
+        $(".loaderScreen").fadeOut(500)
+        $("body").css("overflow", "visible")
+
+    })
+})
 
 
 
