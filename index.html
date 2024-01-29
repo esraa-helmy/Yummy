@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaQuery.css">
+    <title>Yummy</title>
+</head>
+<body>
+    <div class="nav-menu d-flex">
+        <div class="sideBar pe-5">
+            <ul class="mt-4 pe-5">
+                <li class="mb-3" id="search">Search</li>
+                <li class="mb-3" id="categories">Categories</li>
+                <li class="mb-3" id="area">Area</li>
+                <li class="mb-3" id="ingredients">Ingredients</li>
+                <li class="mb-3" id="contact">Contact Us</li>
+            </ul>
+            <div class="footer pe-5 ms-4 me-1 text-white">
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook text-white px-1"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter text-white px-1"></i></a>
+                    <a href=""><i class="fa-solid fa-globe text-white px-1"></i></a>
+                </div>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+    
+            </div>
+           
+    
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="images/logo.png" alt="" srcset="">
+            <i id="closeNav" class="fa-solid open-close-icon fa-2x fa-x d-none"></i>
+            <i id ="openNav" class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="loaderScreen">
+        <i class="fa fa-spinner fa-4x text-white fa-spin"></i>
+    </div>
+    
+    <section class="my-5 min-vh-100">
+        <!-- <div class="innerLoaderScreen">
+            <i class="fa fa-spinner fa-4x text-white fa-spin"></i>
+        </div> -->
+        <div class="container">
+            <div id="searchContainer" class="d-flex mb-5 flex-wrap g-3"></div>
+            <div id="dataRow" class="row g-3 flex-wrap">
+            </div>
+            
+        </div>
+    </section>
+
+   
+  
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="JQuery.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
